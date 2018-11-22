@@ -15,11 +15,6 @@ export default class LoginScreen extends React.Component {
 
   }
 
-  // onPress(event){
-  //   console.log("ouch");
-  //   console.log(this.props.navigation)
-  //   this.props.navigation.navigate('Profile');
-  // }
 
 
   render() {
