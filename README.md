@@ -5,7 +5,7 @@ Pai is a mobile application where we gamify friendship! You are randomly matched
 
 ### Motivation
 
-The word mamihlapinata<strong>PAI</strong>. It allegedly refers to "a look shared by two people, each wishing that the other would initiate something that they both desire but which neither wants to begin."
+The word mamihlapinata<strong>PAI</strong>. It refers to "a look shared by two people, each wishing that the other would initiate something that they both desire but which neither wants to begin."
 
 We took this opportunity to use tech to try and bring people together in reality instead of continuing the cycle of disconnect that can occur with social media.
 
