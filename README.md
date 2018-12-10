@@ -29,3 +29,4 @@ Under development. First demo with core features completed Nov.28th, 2018.
 
 ## Screenshots
 
+!["Screenshot of Chit-Chat in action"](https://github.com/nvonbuttlar/pai/blob/master/screenshots/profile.png)
