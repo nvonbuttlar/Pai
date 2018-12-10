@@ -196,9 +196,5 @@ const styles = StyleSheet.create({
     color: 'black',
     fontWeight: 'bold',
   },
-
-
-
-
 })
-  // already created content
+

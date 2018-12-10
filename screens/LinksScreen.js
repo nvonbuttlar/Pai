@@ -159,7 +159,6 @@ class Card extends React.Component {
     const { user = {}, isCloseColor, middleCloseColor, farAwayColor, closestDistance, middleDistance } = this.props;
     const { first_name, profile_picture, number_of_friends} = user;
     let friendsTotal = number_of_friends;
-    // console.log("Friends", friendsTotal);
     let connectedAt = user.connected_at;
     let expiryAt = (moment(connectedAt).add(7,'days').format('YYYYMMDD'));
     let daysRemaining = moment(expiryAt).fromNow();
@@ -331,7 +330,6 @@ const styles = StyleSheet.create({
     color: '#474747'
   },
   cardFlow: {
-    // marginTop: -5,
     flexDirection:'row',
     justifyContent: 'space-between',
     margin: 0

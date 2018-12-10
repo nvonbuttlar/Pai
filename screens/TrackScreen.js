@@ -18,7 +18,7 @@ class PulseLocation extends React.Component {
   componentWillReceiveProps(props) {
       const {testing, isCloseColor, middleCloseColor, farAwayColor, closestDistance, middleDistance, userId } = props
         let userDistance = 0;
-  
+
         if(testing[0]){
           testing.forEach((user) => {
             if(user.userId == userId) {
@@ -30,13 +30,13 @@ class PulseLocation extends React.Component {
               currentColor: isCloseColor,
             })
           }
-      
+
           if (userDistance <= middleDistance && userDistance > closestDistance) {
             this.setState({
               currentColor:middleCloseColor
             })
           }
-      
+
           if(userDistance > middleDistance) {
             this.setState({
               currentColor:farAwayColor
@@ -140,9 +140,6 @@ export default class TrackScreen extends React.Component {
       user: {
         name: '',
         isImage: true,
-
-        // more here... except it all comes from props anyway
-
       },
       initialColor: 'white',
       finalColor: 'red',
@@ -159,8 +156,8 @@ export default class TrackScreen extends React.Component {
   }
 
   componentDidMount() {
-    
-    // this.timer = 
+
+    // this.timer =
     setInterval(()=> {
     const distanceTesting = this.props.screenProps.connectedFriendsDistances;
     const {isCloseColor, middleCloseColor, farAwayColor, closestDistance, middleDistance, user } = this.props.navigation.state.params;
@@ -176,20 +173,20 @@ export default class TrackScreen extends React.Component {
             finalColor: isCloseColor,
           })
         }
-    
+
         if (userDistance <= middleDistance && userDistance > closestDistance) {
           this.setState({
             finalColor:middleCloseColor
           })
         }
-    
+
         if(userDistance > middleDistance) {
-          this.setState({            
+          this.setState({
             finalColor:farAwayColor
           })
         }
       }
-    
+
     },3000)
 
   }
@@ -197,7 +194,7 @@ export default class TrackScreen extends React.Component {
   componentWillUnmount() {
     setTimeout(()=> {})
     clearInterval(this.timer)
-    //this removes the setState error orange yellow BUT, causes issues with 
+    //this removes the setState error orange yellow BUT, causes issues with
   }
 
   render() {
@@ -206,13 +203,13 @@ export default class TrackScreen extends React.Component {
     const connection = this.props.navigation.state.params.user;
 
     return (
-  
+
         <View style={styles.page}>
           <Text style={{fontWeight: 'bold'}}>
               { connection.first_name }
           </Text>
 
-          <PulseLocation 
+          <PulseLocation
           isCloseColor = {isCloseColor} middleCloseColor={middleCloseColor} farAwayColor = {farAwayColor}
           distance = {this.props.navigation.state.params.distance}
           closestDistance = {closestDistance}

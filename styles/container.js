@@ -15,9 +15,6 @@ export default StyleSheet.create({
     flexDirection: 'column',
     paddingTop: 45,
     paddingBottom: 0,
-
-
-
   },
 });
 

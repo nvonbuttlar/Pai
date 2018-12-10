@@ -15,16 +15,11 @@ export default class LoginScreen extends React.Component {
 
   }
 
-  // onPress(event){
-  //   console.log("ouch");
-  //   console.log(this.props.navigation)
-  //   this.props.navigation.navigate('Profile');
-  // }
   render() {
 
     return (
 
- 
+
       <View style={styles.page}>
         <TouchableOpacity onPress={()=> this.props.navigation.navigate('Profile')}>
         <Image
@@ -62,7 +57,7 @@ export default class LoginScreen extends React.Component {
             />
         </View>
       </View>
-      
+
     )
   }
 }
@@ -85,7 +80,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   logo: {
-    width: 250, 
+    width: 250,
     height: 250,
     alignSelf:'center',
   }
