@@ -30,3 +30,6 @@ Under development. First demo with core features completed Nov.28th, 2018.
 ## Screenshots
 
 !["Screenshot of Pai"](https://github.com/nvonbuttlar/pai/blob/master/screenshots/profile.png)
+!["Screenshot of Pai"](https://github.com/nvonbuttlar/pai/blob/master/screenshots/connection.png)
+!["Screenshot of Pai"](https://github.com/nvonbuttlar/pai/blob/master/screenshots/location.png)
+!["Screenshot of Pai"](https://github.com/nvonbuttlar/pai/blob/master/screenshots/scan.png)
